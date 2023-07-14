@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -83,6 +84,7 @@ module.exports = {
         800: "hsl(30, 16%, 17%)",
         900: "hsl(30, 18%, 5%)",
       },
+      browntransparent: "hsla(36, 100%, 93%, .5)",
     },
     fontWeight: {
       normal: "400",
