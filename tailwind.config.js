@@ -1,18 +1,93 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: ["var(--font-rf)"],
+      },
+    },
+    colors: {
+      brown: {
+        100: "hsl(36, 100%, 93%)",
+        200: "hsl(35, 80%, 82%)",
+        300: "hsl(34, 60%, 70%)",
+        400: "hsl(33, 47%, 55%)",
+        500: "hsl(32, 40%, 45%)",
+        600: "hsl(31, 50%, 35%)",
+        700: "hsl(30, 66%, 23%)",
+        800: "hsl(29, 85%, 15%)",
+        900: "hsl(28, 100%, 10%)",
+      },
+      red: {
+        100: "hsl(18, 100%, 93%)",
+        200: "hsl(16, 94%, 82%)",
+        300: "hsl(14, 88%, 70%)",
+        400: "hsl(12, 80%, 58%)",
+        500: "hsl(12, 77%, 45%)",
+        600: "hsl(12, 82%, 35%)",
+        700: "hsl(11, 88%, 23%)",
+        800: "hsl(10, 94%, 15%)",
+        900: "hsl(8, 100%, 10%)",
+      },
+      orange: {
+        100: "hsl(40, 100%, 95%)",
+        200: "hsl(38, 100%, 85%)",
+        300: "hsl(35, 95%, 70%)",
+        400: "hsl(32, 90%, 62%)",
+        500: "hsl(30, 85%, 55%)",
+        600: "hsl(28, 90%, 42%)",
+        700: "hsl(25, 95%, 30%)",
+        800: "hsl(22, 100%, 20%)",
+        900: "hsl(20, 100%, 10%)",
+      },
+      blue: {
+        100: "hsl(180, 100%, 95%)",
+        200: "hsl(180, 99%, 88%)",
+        300: "hsl(182, 88%, 75%)",
+        400: "hsl(183, 85%, 62%)",
+        500: "hsl(183, 80%, 48%)",
+        600: "hsl(183, 96%, 38%)",
+        700: "hsl(182, 97%, 30%)",
+        800: "hsl(180, 100%, 20%)",
+        900: "hsl(180, 100%, 12%)",
+      },
+      green: {
+        100: "hsl(115, 70%, 95%)",
+        200: "hsl(114, 50%, 88%)",
+        300: "hsl(113, 40%, 75%)",
+        400: "hsl(112, 35%, 62%)",
+        500: "hsl(110, 30%, 42%)",
+        600: "hsl(112, 35%, 35%)",
+        700: "hsl(113, 40%, 25%)",
+        800: "hsl(114, 50%, 18%)",
+        900: "hsl(115, 70%, 8%)",
+      },
+      grey: {
+        100: "hsl(30, 18%, 95%)",
+        200: "hsl(30, 16%, 85%)",
+        300: "hsl(30, 14%, 72%)",
+        400: "hsl(30, 12%, 61%)",
+        500: "hsl(30, 10%, 50%)",
+        600: "hsl(30, 12%, 41%)",
+        700: "hsl(30, 14%, 28%)",
+        800: "hsl(30, 16%, 17%)",
+        900: "hsl(30, 18%, 5%)",
+      },
+    },
+    fontWeight: {
+      normal: "400",
+      bold: "800",
     },
   },
   plugins: [],
-}
+};
