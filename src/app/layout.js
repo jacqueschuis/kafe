@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
       <Head>
         <meta name="theme-color" content="#331800" />
       </Head>
-      <body className={`${robotoFlex.variable} font-sans dark`}>
+      <body
+        className={`${robotoFlex.variable} font-sans dark bg-gradient-to-b dark:bg-gradient-to-b from-brown-200 via-brown-100 to-brown-200 dark:from-brown-900 dark:via-orange-900 dark:to-brown-900`}
+      >
         {children}
       </body>
     </html>
