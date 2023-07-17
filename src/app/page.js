@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gradient-to-b dark:bg-gradient-to-b from-brown-200 via-brown-100 to-brown-200 dark:from-brown-900 dark:via-orange-900 dark:to-brown-900">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="blobs flex flex-col justify-center items-center relative">
         <div className="bg-red-500 one blob"></div>
         <div className="bg-green-500 three blob"></div>
