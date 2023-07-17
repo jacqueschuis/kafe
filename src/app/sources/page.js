@@ -5,7 +5,7 @@ const SourceList = () => {
   return (
     <Layout>
       <div className="header text-center mb-24">
-        <h1 className="text-9xl font-bold text-red-700 dark:text-red-400">
+        <h1 className="text-5xl md:text-9xl font-bold text-red-700 dark:text-red-400">
           Source List
         </h1>
         <h2 className="text-orange-600 dark:text-orange-300 text-2xl">
@@ -13,7 +13,7 @@ const SourceList = () => {
         </h2>
       </div>
 
-      <p className="mb-5">
+      <p className="mb-5 text-orange-800 dark:text-orange-400">
         information on
         <Link href="/">
           <span className="font-bold"> kafe </span>
@@ -21,7 +21,7 @@ const SourceList = () => {
         taken from the following sources:
       </p>
 
-      <ul className="flex flex-col gap-6">
+      <ul className="flex flex-col gap-6 text-orange-800 dark:text-orange-400">
         <li>
           <a
             href="https://www.baristahustle.com/knowledgebase-archive/"
