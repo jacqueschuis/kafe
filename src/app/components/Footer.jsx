@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
     return ( 
         <nav className="py-5 text-center">
