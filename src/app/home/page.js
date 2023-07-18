@@ -24,6 +24,9 @@ const HomePage = () => {
         <li className="hover:underline underline-offset-4 transition-all mb-3">
           <Link href="/dev">Dev</Link>
         </li>
+        <li className="hover:underline underline-offset-4 transition-all mb-3">
+          <Link href="/ui">UI</Link>
+        </li>
       </ul>
     </Layout>
   );
