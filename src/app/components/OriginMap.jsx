@@ -15,11 +15,18 @@ const OriginMap = () => {
         <div className="w-full h-full flex flex-col gap-5 justify-between items-center">
             <h2 className="font-bold text-5xl text-orange-600 dark:text-orange-300 text-center">Origin Map</h2>
             <div className="map-container relative">
-                <svg xmlns="http://www.w3.org/2000/svg" className={`${activeIndex === 1 ? "fill-orange-600 opacity-80 dark:fill-orange-300 absolute h-[20%] top-[42%] left-[13%] transition-all" : "absolute h-[20%] top-[42%] left-[13%] transition-all fill-none"}`}  viewBox="0 0 259 220">
+                <svg xmlns="http://www.w3.org/2000/svg" className={`${activeIndex === 1 ? "fill-orange-600 opacity-80 dark:fill-orange-300 absolute h-[21.8%] w-[13%] top-[42%] left-[13%] transition-all" : "absolute h-[21.8%] w-[13%] top-[42%] left-[13%] transition-all fill-none"}`}  viewBox="0 0 259 220">
                     <path d="M84 6.99967C40 -7.00033 8.99997 1.99967 1.99997 42.9997C-14 125.999 161 222 208 219C255 216 260 168 258 141C256 114 215 129 217 107C219 85 203 68 170 68C137 68 128 20.9997 84 6.99967Z" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" className={`${activeIndex === 2 ? "fill-orange-600 opacity-80 dark:fill-orange-300 absolute h-[29%] top-[55%] left-[23%] transition-all" : "absolute h-[29%] top-[55%] left-[23%] transition-all fill-none"}`}  viewBox="0 0 295 310">
+                <svg xmlns="http://www.w3.org/2000/svg" className={`${activeIndex === 2 ? "fill-orange-600 opacity-80 dark:fill-orange-300 absolute h-[30.7%] w-[15%] top-[54%] left-[23%] transition-all" : "absolute h-[30.7%] w-[15%] top-[54%] left-[23%] transition-all fill-none"}`}  viewBox="0 0 295 310">
                     <path d="M137 250.5C103 190.5 49.5 229.5 20.5 192C-6.99998 156.5 -3.99998 101.5 20.5 44.5C45 -12.4998 83.5 11.9998 124 2.49978C164.5 -7.00022 247.5 49.4998 281.5 101.5C315.5 153.5 270 219.5 247.5 276C225 332.5 171 310.5 137 250.5Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className={`${activeIndex === 3 ? "fill-orange-600 opacity-80 dark:fill-orange-300 absolute h-[13.3%] w-[6%] top-[55%] right-[40%] transition-all" : "absolute h-[13.3%] w-[6%] top-[55%] right-[40%] transition-all fill-none"}`} viewBox="0 0 118 136">
+                    <path d="M27.5 36.5001C33.5 1.50012 61 2.50013 91.5 1.00013C118 -0.761049 117.5 45.5001 117 58.0001C116.5 70.5001 73 89.4999 58 85.5001C43 81.5003 43.5 120 27.5 132.5C11.5 145 9.49997 106 1.99997 92.5001C-5.50003 79.0001 21.5 71.5001 27.5 36.5001Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className={`${activeIndex === 4 ? "fill-orange-600 opacity-80 dark:fill-orange-300 absolute h-[13.3%] w-[16%] top-[59%] right-[11%] transition-all" : "absolute h-[13.3%] w-[16%] top-[59%] right-[11%] transition-all fill-none"}`} viewBox="0 0 319 136">
+                    <path d="M36.0001 89.4999C24.0001 89.4999 -0.999927 42.4999 1.00007 8.99986C1.00007 -24.5001 77.0001 63.9999 75.0001 78.9999C73.0001 93.9999 48.0001 89.4999 36.0001 89.4999Z" />
+                    <path d="M225 101C205 89.9999 230 42.4999 267 49.4999C303 56.4999 314 89.4999 318 101C322 112.5 301 150 284 128C267 106 245 112 225 101Z" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-[150px] md:h-[300px] fill-blue-800 dark:fill-blue-200" viewBox="0 0 1880 1003">
                     <path 
