@@ -7,15 +7,14 @@
 :root {
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
 }
 
 body * {
   font-family: "Roboto Flex", sans-serif;
-  font-variation-settings: "opsz" 144, "wdth" 125, "YTAS" 700, "YTDE" -150,
-    "YTUC" 675 "XTRA" 500;
+  font-variation-settings: "opsz" 50, "wdth" 125, "YTAS" 700, "YTDE" -150,
+    "YTUC" 675, "XTRA" 500;
 }
 
 .blob {
