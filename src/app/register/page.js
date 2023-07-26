@@ -22,10 +22,7 @@ const Register = () => {
         emailRedirectTo: `${location.origin}/auth/callback`,
       },
     });
-    await supabase.from("user-info").insert({
-      first_name: firstName,
-      last_name: lastName,
-    });
+    router.refresh();
   };
   return (
     <Layout>
@@ -55,7 +52,7 @@ const Register = () => {
               className="p-2 rounded-md flex-initial"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div className="w-full flex gap-5">
+            {/* <div className="w-full flex gap-5">
               <label htmlFor="first-name" className="hidden">
                 First Name
               </label>
@@ -76,7 +73,7 @@ const Register = () => {
                 onChange={(e) => setLastName(e.target.value)}
                 className="p-2 rounded-md w-1/2"
               />
-            </div>
+            </div> */}
             <button className="w-full bg-green-400 rounded-md p-3 font-bold text-xl">
               Register
             </button>
