@@ -11,7 +11,6 @@ const OriginMap = () => {
     const activeStyles = "border-orange-600 bg-orange-600 text-brown-100 dark:border-orange-300 dark:bg-orange-300 dark:text-brown-900";
 
     return ( 
-        <>
         <div className="w-full h-full flex flex-col gap-5 justify-between items-center">
             <h2 className="font-bold text-5xl text-orange-600 dark:text-orange-300 text-center">Origin Map</h2>
             <div className="map-container w-full relative">
@@ -43,7 +42,6 @@ const OriginMap = () => {
                 <button value="4" onClick={handleClick} className={`font-bold border-4 border-orange-600 dark:border-orange-300 rounded-lg md:text-xl transition-all md:p-3 p-2 ${activeIndex === 4 ? activeStyles : "text-orange-600 dark:text-orange-300 hover:bg-orange-600 hover:text-brown-100 hover:dark:bg-orange-300 hover:dark:text-brown-900"}`}>Asia</button>
             </div>
         </div>
-        </>
      );
 }
  
