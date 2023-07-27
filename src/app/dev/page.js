@@ -59,14 +59,22 @@ const DevPage = () => {
             Footnote Test
           </h2>
           <p>
-            Lorem
-            <sup className="cursor-pointer" onClick={sourceClick}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+            <sup
+              className="cursor-pointer font-bold text-red-500 dark:text-red-300"
+              onClick={sourceClick}
+            >
               1
             </sup>{" "}
-            ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            veritatis in optio aliquid voluptas minus molestiae provident itaque
-            laborum voluptatem nesciunt beatae, numquam dicta vitae reiciendis
-            deleniti eius et temporibus.
+            Adipisci veritatis in optio aliquid voluptas minus molestiae
+            provident itaque laborum voluptatem nesciunt beatae, numquam dicta
+            vitae reiciendis deleniti eius et temporibus.
+            <sup
+              className="cursor-pointer font-bold text-red-500 dark:text-red-300"
+              onClick={sourceClick}
+            >
+              2
+            </sup>
           </p>
         </div>
       </Trail>
