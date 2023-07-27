@@ -7,6 +7,7 @@ import Footnote from "../components/Footnote";
 import Layout from "../components/HomeLayout";
 import OriginMap from "../components/OriginMap";
 import Trail from "../components/Trail";
+import Calculator from "../components/Calculator";
 
 const DevPage = () => {
   const [showSources, setShowSources] = useState(false);
@@ -25,6 +26,11 @@ const DevPage = () => {
       link: "https://j-par.com",
     },
   ];
+
+  const brewInfo = {
+    method: "V60",
+    materials: ["Beans", "V60 Brewer", "Grinder", "Scale", "Gooseneck Kettle"],
+  };
 
   const [expand, expandApi] = useSpring(() => ({
     y: showSources ? 0 : 150,
@@ -76,6 +82,9 @@ const DevPage = () => {
               2
             </sup>
           </p>
+        </div>
+        <div className="w-full mb-10 px-10">
+          <Calculator {...brewInfo} />
         </div>
       </Trail>
       <Footnote sources={sources} expand={expand} sourceClick={sourceClick} />
