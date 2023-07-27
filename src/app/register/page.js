@@ -24,6 +24,7 @@ const Register = () => {
     });
     router.refresh();
   };
+
   return (
     <Layout>
       <Trail>
