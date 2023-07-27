@@ -6,9 +6,8 @@ const Calculator = ({method, materials}) => {
         <Trail>
             <div className="header mb-12 text-center">
             <h2 className="font-bold text-5xl text-orange-600 dark:text-orange-300 text-center">Brew Calculator</h2>
-            <p className="font-bold text-2xl text-red-600 dark:text-orange-300 text-center">Make the best {method}</p>
+            <p className="font-bold text-2xl text-red-600 dark:red-orange-300 text-center">Make the best {method}</p>
             </div>
-
             <CalculatorForm />
         </Trail>
      );
