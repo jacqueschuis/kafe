@@ -27,8 +27,8 @@ const Register = () => {
   return (
     <Layout>
       <Trail>
-        <div className="bg-brown-100 max-h-[500px] max-w-[500px] w-full h-full p-10 rounded-xl shadow-xl box-border">
-          <h2 className="font-bold text-5xl text-orange-600 dark:text-orange-300">
+        <div className="bg-brown-100 dark:bg-brown-600 max-h-[500px] max-w-[500px] w-full h-full p-10 rounded-xl shadow-xl box-border">
+          <h2 className="font-bold text-5xl text-orange-600 dark:text-orange-200">
             Register
           </h2>
           <form onSubmit={handleSignUp} className="flex flex-col gap-5 my-3">
@@ -39,7 +39,8 @@ const Register = () => {
               type="text"
               id="email"
               placeholder="Email"
-              className="p-2 rounded-md flex-initial"
+              value={email}
+              className="p-2 border-4 placeholder:text-orange-600 dark:placeholder:text-orange-300 text-orange-600 dark:text-orange-300 border-orange-600 dark:border-orange-300 rounded-lg flex-initial dark:bg-brown-800"
               onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor="password" className="hidden">
@@ -48,8 +49,9 @@ const Register = () => {
             <input
               id="password"
               type="password"
+              value={password}
               placeholder="Password"
-              className="p-2 rounded-md flex-initial"
+              className="p-2 border-4 placeholder:text-orange-600 dark:placeholder:text-orange-300 text-orange-600 dark:text-orange-300 border-orange-600 dark:border-orange-300 rounded-lg flex-initial dark:bg-brown-800"
               onChange={(e) => setPassword(e.target.value)}
             />
             {/* <div className="w-full flex gap-5">
@@ -74,7 +76,7 @@ const Register = () => {
                 className="p-2 rounded-md w-1/2"
               />
             </div> */}
-            <button className="w-full bg-green-400 rounded-md p-3 font-bold text-xl">
+            <button className="w-full border-4 bg-green-400 dark:bg-green-300 dark:text-green-800 rounded-lg p-3 font-bold text-xl">
               Register
             </button>
           </form>
